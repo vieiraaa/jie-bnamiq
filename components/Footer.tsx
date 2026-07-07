@@ -1,20 +1,39 @@
 import Link from "next/link";
 import { globalUnits } from "@/lib/content";
+import Image from "next/image";
+import logoAtiBrasil from "@/lib/logoatibrasil.png";
+import logoBnamiq from "@/lib/logobnamiq.png";
+import logoJieBnamiq from "@/lib/logojiebnamiq.png";
 
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--color-hairline)] mt-32">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-20 grid gap-16 md:grid-cols-[1.3fr_1fr_1fr_1fr]">
         <div>
-          <div className="font-[family-name:var(--font-display)] font-extrabold text-xl mb-4">
-            JIE <span className="text-[var(--color-accent)]">BNAMIQ</span>
+          
+
+        <div className="flex flex-col gap-4 opacity-90 self-start">
+          <Image
+                src={logoJieBnamiq}
+                alt="Jie Bnamiq"
+                className="h-16 w-auto object-contain"
+                priority
+              />
+
+              <Image
+                src={logoAtiBrasil}
+                alt="A.T.I. BRASIL"
+                className="h-10 w-auto object-contain"
+                priority
+              />
+
+          <Image
+                src={logoBnamiq}
+                alt="BNAMIQ"
+                className="h-16 w-auto object-contain"
+                priority
+              />
           </div>
-          <p className="text-sm text-[var(--color-muted)] max-w-xs leading-relaxed">
-            A força da engenharia global com a confiança da distribuição local.
-          </p>
-          <p className="text-xs text-[var(--color-muted)] mt-6 font-[family-name:var(--font-mono)]">
-            Distribuição exclusiva A.T.I. BRASIL
-          </p>
         </div>
 
         <div>

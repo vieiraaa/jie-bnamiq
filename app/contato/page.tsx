@@ -40,7 +40,7 @@ export default async function ContatoPage({
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_35%_35%,rgba(224,39,44,0.35),transparent_60%)]" />
               <Image
                 src={atibrasilCenter}
-                alt="Sede A.T.I. BRASIL"
+                alt="Sede BNAMIQ & A.T.I. BRASIL"
                 className="object-cover w-full h-full"
                 fill
               />
@@ -66,7 +66,7 @@ export default async function ContatoPage({
             </div>
 
             <h2 className="font-[family-name:var(--font-display)] font-bold text-sm uppercase tracking-wide text-[var(--color-muted)] mb-3">
-              Outras unidades A.T.I. BRASIL
+              Unidades distribuidoras BNAMIQ
             </h2>
             <div className="nameplate text-[13px] space-y-1">
               {atiUnits.slice(1).map((u) => (

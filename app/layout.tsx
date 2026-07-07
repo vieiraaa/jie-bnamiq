@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s · JIE BNAMIQ",
   },
   description:
-    "JIE BNAMIQ, joint venture entre JIE JDRIVE e A.T.I. BRASIL: motorredutores, redutores, planetários e soluções de acionamento industrial com engenharia global e distribuição local.",
+    "JIE BNAMIQ, joint venture entre JIE JDRIVE e BNAMIQ: motorredutores, redutores, planetários e soluções de acionamento industrial com engenharia global e distribuição local.",
   keywords: [
     "motorredutor",
     "redutor planetário",

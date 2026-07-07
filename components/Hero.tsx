@@ -9,6 +9,8 @@ import {
   useTransform,
   useScroll,
 } from "framer-motion";
+import Image from "next/image";
+import logo10 from "@/lib/logo_jie2.png";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
@@ -75,15 +77,21 @@ const rotate = useTransform(scrollY, (value) => value * 0.15);
         </svg>
       </motion.div>
 
-      <div className="relative z-10 max-w-7xl w-full px-6 md:px-12 md:pl-48 pb-20 md:pb-65 ml-0 mr-auto">
-        <motion.span
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-          className="inline-block font-[family-name:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-white/60 mb-6"
-        >
-          JIE BNAMIQ × A.T.I. BRASIL
-        </motion.span>
+      <div className="relative z-60 max-w-7xl w-full px-6 md:px-12 md:pl-48 pb-20 md:pb-55 ml-0 mr-auto">
+        <motion.div
+  initial={{ opacity: 0, y: 12 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+  className="mb-15"
+>
+  <Image
+    src={logo10}
+    alt="JIE BNAMIQ"
+    width={90}
+    priority
+    className="h-auto w-auto opacity-90 "
+  />
+</motion.div>
 
         <motion.h1
           initial={{ opacity: 0, y: 24 }}

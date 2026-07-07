@@ -20,7 +20,7 @@ export default function ProdutosPage() {
             Soluções completas em acionamentos.
           </h1>
           <p className="text-[var(--color-ink-soft)] text-lg max-w-2xl mb-16 leading-relaxed">
-            A linha de produtos JIE BNAMIQ, em parceria com a A.T.I. BRASIL, oferece soluções
+            A linha de produtos JIE, em parceria com a BNAMIQ, oferece soluções
             completas em acionamentos desenvolvidos para garantir eficiência, confiabilidade e
             alto desempenho em diferentes aplicações.
           </p>

@@ -28,7 +28,7 @@ export const segments = [
 export const differentiators = [
   {
     title: "Distribuição Oficial",
-    description: "A.T.I. BRASIL é distribuidora oficial JIE BNAMIQ, com presença nacional.",
+    description: "O grupo A.T.I. BRASIL é distribuidor oficial JIE BNAMIQ, com presença nacional.",
   },
   {
     title: "Engenharia Especializada",
@@ -138,8 +138,8 @@ export const atiUnits = [
 // Everything else is left as a placeholder for the client to confirm —
 // per the brief, technical/institutional data is never fabricated.
 export const stats = [
-  { label: "Anos de atuação da A.T.I. BRASIL", value: 26, suffix: "+", verified: true },
+  { label: "Anos de atuação da JIE", value: 38, suffix: "+", verified: true },
   { label: "Famílias de produtos no catálogo", value: 21, suffix: "+", verified: true },
-  { label: "Unidades da A.T.I. BRASIL no país", value: 9, suffix: "", verified: true },
+  { label: "Unidades de distribuição no Brasil", value: 9, suffix: "", verified: true },
   { label: "Unidades globais JIE BNAMIQ", value: 4, suffix: "", verified: true },
 ];

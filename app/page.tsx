@@ -29,7 +29,7 @@ export default function HomePage() {
           </h2>
           <p className="text-[var(--color-ink-soft)] mt-5 max-w-md leading-relaxed text-justify">
             A JIE BNAMIQ combina a expertise, qualidade e capacidade produtiva da JIE JDRIVE
-            com o conhecimento e a distribuição da A.T.I. BRASIL — mais de 26 anos de mercado
+            com o conhecimento e a distribuição nacional da BNAMIQ — mais de 26 anos de mercado
             e presença em todo o território nacional.
           </p>
           <Link
@@ -51,7 +51,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(224,39,44,0.35),transparent_60%)]" />
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="font-[monsseratr:var(--font-display)] font-extrabold text-white/90 text-2xl z-10">
-                JIE <span className="text-[var(--color-accent)]">×</span> A.T.I.
+                JIE <span className="text-[var(--color-accent)]">×</span> BNAMIQ
               </span>
             </div>
           </div>

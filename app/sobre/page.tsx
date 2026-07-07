@@ -9,7 +9,7 @@ import { globalUnits, atiUnits } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Sobre",
   description:
-    "Conheaça a joint venture entre JIE JDRIVE e A.T.I. BRASIL e a rede global de unidades JIE BNAMIQ.",
+    "Conheaça a joint venture entre JIE JDRIVE e BNAMIQ e a rede global de unidades JIE BNAMIQ.",
 };
 
 const timeline = [
@@ -19,14 +19,14 @@ const timeline = [
     text: "Capacidade produtiva e engenharia de acionamentos com escala global, sediada em Hangzhou.",
   },
   {
-    year: "+26 anos",
-    title: "A.T.I. BRASIL no mercado",
+    year: "+38 anos",
+    title: "JIE BNAMIQ",
     text: "Especializada em transmissão de potência industrial, com sede em Curitiba e 9 unidades no país.",
   },
   {
     year: "Joint Venture",
     title: "Nasce a JIE BNAMIQ",
-    text: "União da expertise produtiva JIE com o conhecimento e a distribuição local da A.T.I. BRASIL.",
+    text: "União da expertise produtiva JIE com o conhecimento e a distribuição local da BNAMIQ.",
   },
   {
     year: "Hoje",
@@ -49,7 +49,7 @@ export default function SobrePage() {
           <p className="text-[var(--color-ink-soft)] text-lg mt-6 max-w-6xl leading-relaxed centered md:text-justify">
             A JIE BNAMIQ é uma marca joint venture que combina a expertise, qualidade e
             capacidade produtiva da JIE JDRIVE com o conhecimento, experiência e distribuição
-            local da A.T.I. BRASIL, distribuidora oficial há mais de 26 anos no mercado
+            nacional da BNAMIQ, distribuidora oficial há mais de 26 anos no mercado
             brasileiro de transmissão de potência industrial.
           </p>
         </Reveal>
@@ -157,7 +157,7 @@ export default function SobrePage() {
               Distribuição nacional
             </span>
             <h2 className="font-[monsserat:var(--font-display)] font-extrabold text-2xl md:text-3xl mt-4 mb-10">
-              A.T.I. BRASIL de norte a sul.
+             JIE BNAMIQ de norte a sul.
             </h2>
           </Reveal>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
