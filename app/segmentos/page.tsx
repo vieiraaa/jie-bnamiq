@@ -25,9 +25,7 @@ export const metadata: Metadata = {
   description: "Conheça os segmentos industriais atendidos pela linha JIE BNAMIQ.",
 };
 
-const segmentPatterns: Record<string, string> = {
-  "Mineração": "conic-gradient(from 0deg, #e0272c, #1d1d1f 60%, #e0272c)",
-};
+
 
 export default function SegmentosPage() {
   return (
