@@ -2,7 +2,13 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useSpring,
+  useTransform,
+  useScroll,
+} from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
@@ -15,6 +21,11 @@ export default function Hero() {
   const rotateY = useTransform(sx, [-0.5, 0.5], [-4, 4]);
   const glowX = useTransform(sx, [-0.5, 0.5], ["30%", "70%"]);
   const glowY = useTransform(sy, [-0.5, 0.5], ["30%", "70%"]);
+  const { scrollY } = useScroll();
+
+// Velocidade da rotação.
+// A cada pixel rolado ele gira 0.15°.
+const rotate = useTransform(scrollY, (value) => value * 0.15);
 
   function handleMove(e: React.MouseEvent<HTMLDivElement>) {
     const rect = ref.current?.getBoundingClientRect();
@@ -40,7 +51,11 @@ export default function Hero() {
 
       {/* Product silhouette, mouse-tracked depth */}
       <motion.div
-        style={{ rotateX, rotateY }}
+        style={{
+          rotate,
+          rotateX,
+          rotateY,
+        }}
         className="pointer-events-none absolute right-[-6%] top-[10%] w-[65%] max-w-[720px] aspect-square [transform-style:preserve-3d]"
       >
         <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[var(--color-accent)]/25 to-transparent blur-3xl" />
