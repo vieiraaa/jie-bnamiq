@@ -43,7 +43,7 @@ const socialLinks = [
     icon: MessageCircle,
   },
   {
-    href: "https://www.instagram.com/a.t.i.brasil/",
+    href: "https://www.instagram.com/jiebnamiq/",
     label: "Instagram",
     icon: Instagram,
   },
