@@ -32,7 +32,7 @@ const links = [
 
 const socialLinks = [
   {
-    href: "https://loja.atibrasil.com.br/",
+    href: "https://atibrasil.com.br/",
     label: "Site",
     icon: Globe,
   },
