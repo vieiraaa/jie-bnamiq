@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import ProductsCatalog from "@/components/ProductsCatalog";
 
 export const metadata: Metadata = {
   title: "Linha de Produtos",
