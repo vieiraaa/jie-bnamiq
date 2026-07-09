@@ -11,6 +11,8 @@ import {
   LayoutGrid,
   Mail,
   Search,
+  Layers,
+  Boxes,
   Globe,
   MessageCircle,
   Instagram,
@@ -23,7 +25,8 @@ import CommandPalette from "@/components/CommandPalette";
 const links = [
   { href: "/", label: "Início", icon: Home },
   { href: "/sobre", label: "Sobre", icon: Building2 },
-  { href: "/produtos", label: "Produtos", icon: Cog },
+  { href: "/produtos", label: "Produtos", icon: Layers },
+  { href: "/configurator", label: "Configurator", icon: Cog },
   { href: "/segmentos", label: "Segmentos", icon: LayoutGrid },
   { href: "/contato", label: "Contato", icon: Mail },
 ];
@@ -75,7 +78,7 @@ export default function Sidebar() {
       {/* Mobile top bar */}
       <div className="glass-panel md:hidden fixed top-3 left-3 right-3 z-40 flex items-center justify-between rounded-[var(--radius-panel)] px-4 py-3">
         <Link href="/" className="font-[family-name:var(--font-display)] font-extrabold tracking-tight text-[var(--color-accent)]">
-          JIE <span className="text-[var(--color-ink)] dark:text-[var(--color-ink-dark)]">BNAMIQ</span>
+          JIE <span className="text-black">BNAMIQ</span>
         </Link>
         <button
           aria-label="Buscar"
@@ -103,7 +106,7 @@ export default function Sidebar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
-              className="font-[family-name:var(--font-display)] font-bold text-sm whitespace-nowrap"
+              className="font-[family-name:var(--font-display)] font-bold text-sm whitespace-nowrap text-black"
             >
               BNAMIQ
             </motion.span>
@@ -129,7 +132,7 @@ export default function Sidebar() {
                   <motion.span
                     initial={{ opacity: 0, x: -4 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="text-sm font-medium whitespace-nowrap"
+                    className="text-sm font-medium whitespace-nowrap "
                   >
                     {link.label}
                   </motion.span>
@@ -184,6 +187,28 @@ export default function Sidebar() {
           })}
         </div>
       </div>
+
+      {/* Mobile social bar */}
+<div className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
+  <div className="glass-panel flex items-center gap-3 rounded-full px-4 py-3 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.35)]">
+    {socialLinks.map((item) => {
+      const Icon = item.icon;
+
+      return (
+        <a
+          key={item.href}
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={item.label}
+          className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[var(--color-ink)] transition-all duration-300 hover:bg-[var(--color-accent)] hover:text-white active:scale-95"
+        >
+          <Icon size={20} />
+        </a>
+      );
+    })}
+  </div>
+</div>
 
       <CommandPalette open={paletteOpen} onClose={() => setPaletteOpen(false)} />
     </>

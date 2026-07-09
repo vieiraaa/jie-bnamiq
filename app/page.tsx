@@ -2,11 +2,13 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Hero from "@/components/Hero";
+import shoppingCWB from "@/lib/ShoppingCWB.png";
 import Numeros from "@/components/Numeros";
 import Reveal from "@/components/Reveal";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
 import { segments, differentiators, segmentSlug } from "@/lib/content";
+
 
 const featured = products.filter((p) =>
   ["jrtr", "jrp-standard", "jrph", "jcmb", "jrp-rv", "jrtg"].includes(p.slug)
@@ -19,7 +21,7 @@ export default function HomePage() {
       <Numeros />
 
       {/* Sobre preview */}
-      <section className="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-15 grid md:grid-cols-2 gap-12 items-center">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 md:py-1 grid md:grid-cols-2 gap-12 items-center">
         <Reveal>
           <span className="font-[monsseratr:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)] justify-center md:justify-start">
             Sobre a marca
@@ -43,12 +45,12 @@ export default function HomePage() {
         <Reveal delay={0.1}>
           <div className="aspect-[4/3] rounded-[var(--radius-panel)] relative overflow-hidden">
             <Image
-              src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="JIE BNAMIQ"
+              src={shoppingCWB}
+              alt="Shopping CWB"
               fill
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(224,39,44,0.35),transparent_60%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(224,39,44,0.35),transparent_80%)]" />
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="font-[monsseratr:var(--font-display)] font-extrabold text-white/90 text-2xl z-10">
                 JIE <span className="text-[var(--color-accent)]">×</span> BNAMIQ
@@ -87,7 +89,7 @@ export default function HomePage() {
       </section>
 
       {/* Segmentos preview */}
-      <section className="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-2">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 md:py-2">
         <Reveal>
           <span className="font-[monsseratr:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
             Segmentos
@@ -115,7 +117,7 @@ export default function HomePage() {
       </section>
 
       {/* Diferenciais */}
-      <section className="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 py-10 md:py-10">
         <Reveal>
           <span className="font-[monsseratr:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
             Diferenciais
@@ -142,7 +144,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="max-w-7xl mx-auto px-6 md:px-12 pb-2">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 pb-2 md:py-2">
         <Reveal className="rounded-[var(--radius-panel)] bg-[var(--color-ink)] px-8 md:px-16 py-16 md:py-20 text-center relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(224,39,44,0.25),transparent_60%)]" />
           <h2 className="font-[monsseratr:var(--font-display)] font-extrabold text-white text-3xl md:text-4xl relative z-10 max-w-xl mx-auto">

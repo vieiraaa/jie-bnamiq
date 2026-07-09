@@ -13,26 +13,44 @@ export default function Footer() {
           
 
         <div className="flex flex-col gap-4 opacity-90 self-start">
+          <a
+              href="https://jie-bnamiq.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
           <Image
                 src={logoJieBnamiq}
                 alt="Jie Bnamiq"
                 className="h-16 w-auto object-contain"
                 priority
               />
-
+            </a>
+            <a
+              href="https://atibrasil.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 src={logoAtiBrasil}
                 alt="A.T.I. BRASIL"
+                href="https://atibrasil.com.br"
                 className="h-10 w-auto object-contain"
                 priority
               />
-
+            </a>
+          <a
+              href="https://bnamiq.com.br"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
           <Image
                 src={logoBnamiq}
                 alt="BNAMIQ"
+                href="https://bnamiq.com"
                 className="h-16 w-auto object-contain"
                 priority
               />
+            </a>
           </div>
         </div>
 

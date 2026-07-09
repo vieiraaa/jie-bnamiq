@@ -23,7 +23,7 @@ export async function POST(req: Request) {
       },
     });
 
-    const subject = `Solicitação de contato - ${produto || "Site"}`;
+    const subject = `JIE-LEAD - Solicitação de contato - ${produto || "Site"}`;
 
     const textLines = [
       `Nome: ${nome || ""}`,
