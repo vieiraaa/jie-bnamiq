@@ -33,7 +33,6 @@ export default function Footer() {
               <Image
                 src={logoAtiBrasil}
                 alt="A.T.I. BRASIL"
-                href="https://atibrasil.com.br"
                 className="h-10 w-auto object-contain"
                 priority
               />
@@ -46,7 +45,6 @@ export default function Footer() {
           <Image
                 src={logoBnamiq}
                 alt="BNAMIQ"
-                href="https://bnamiq.com"
                 className="h-16 w-auto object-contain"
                 priority
               />
