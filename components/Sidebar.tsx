@@ -25,7 +25,7 @@ const links = [
   { href: "/", label: "Início", icon: Home },
   { href: "/sobre", label: "Sobre", icon: Building2 },
   { href: "/produtos", label: "Produtos", icon: Layers },
-  { href: "/configurator", label: "Configurator", icon: Cog },
+  { href: "/configurator", label: "Configurador", icon: Cog },
   { href: "/segmentos", label: "Segmentos", icon: LayoutGrid },
   { href: "/contato", label: "Contato", icon: Mail },
 ];
