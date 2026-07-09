@@ -129,7 +129,7 @@ const rotate = useTransform(scrollY, (value) => value * 0.15);
             href="/contato"
             className="inline-flex items-center gap-2 bg-white/10 text-white px-10 py-3.5 rounded-full text-sm font-medium backdrop-blur-md border border-white/15 hover:bg-white/15 transition"
           >
-            Solicitar orçamento
+            Solicitar orçamento!
             <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
           </Link>
         </motion.div>

@@ -12,7 +12,6 @@ import {
   Mail,
   Search,
   Layers,
-  Boxes,
   Globe,
   MessageCircle,
   Instagram,
