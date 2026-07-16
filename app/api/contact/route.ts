@@ -48,8 +48,20 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ ok: true });
-  } catch (err) {
-    console.error("Error sending contact email:", err);
-    return NextResponse.json({ ok: false, error: String(err) }, { status: 500 });
-  }
+  } catch (err: any) {
+  console.error("========== SMTP ERROR ==========");
+  console.error(err);
+  console.error(err?.message);
+  console.error(err?.response);
+  console.error(err?.responseCode);
+
+  return NextResponse.json(
+    {
+      ok: false,
+      error: err?.message,
+      response: err?.response,
+      code: err?.responseCode,
+    },
+    { status: 500 }
+  );
 }
