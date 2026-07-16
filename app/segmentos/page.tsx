@@ -25,8 +25,6 @@ export const metadata: Metadata = {
   description: "Conheça os segmentos industriais atendidos pela linha JIE BNAMIQ.",
 };
 
-
-
 export default function SegmentosPage() {
   return (
     <div className="pt-28 md:pt-36 pb-24">
@@ -57,7 +55,7 @@ export default function SegmentosPage() {
                   fill
                   className="absolute inset-0 object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/60" />
+                <div className="absolute inset-0 bg-black/20" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                 <div className="relative z-10 flex items-center justify-between w-full">
                   <h2 className="font-[monsseratr:var(--font-display)] font-bold text-white text-xl">

@@ -152,16 +152,7 @@ export default function Sidebar() {
           
         </button>
 
-        <button
-          onClick={() => setExpanded((v) => !v)}
-          className="flex items-center gap-3 rounded-[var(--radius-control)] px-2.5 py-2.5 text-[var(--color-ink-soft)] hover:bg-black/5 dark:hover:bg-white/5 transition"
-          aria-label={expanded ? "Recolher menu" : "Expandir menu"}
-        >
-          {expanded ? <PanelLeftClose size={18} /> : <PanelLeftOpen size={18} />}
-          {isExpanded && (
-            <span className="text-sm font-medium whitespace-nowrap">{expanded ? "Recolher" : "Expandir"}</span>
-          )}
-        </button>
+        
       </motion.aside>
 
       <div

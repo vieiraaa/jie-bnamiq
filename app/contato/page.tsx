@@ -22,7 +22,7 @@ export default async function ContatoPage({
   const produtoParam = resolvedSearchParams?.produto ?? "";
 
   return (
-    <div className="pt-28 md:pt-36 pb-24">
+    <div className="pt-28 md:pt-36">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <Reveal>
           <span className="font-[family-name:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
