@@ -46,7 +46,7 @@ const socialLinks = [
   },
   {
     href: "https://www.linkedin.com/company/atibrasil/",
-    label: "LinkedIn",
+    label: "Linkedin",
     icon: Linkedin,
   },
 ];
