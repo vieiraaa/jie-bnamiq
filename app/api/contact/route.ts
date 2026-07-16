@@ -64,7 +64,7 @@ ${mensagem || ""}
     });
 
     return NextResponse.json({ ok: true });
-   } catch (err: unknown) {
+     } catch (err: unknown) {
     console.error("========== SMTP ERROR ==========");
 
     const error = err instanceof Error ? err : new Error(String(err));
@@ -80,3 +80,4 @@ ${mensagem || ""}
       { status: 500 }
     );
   }
+}
