@@ -48,7 +48,7 @@ export default async function ContatoPage({
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin size={16} className="text-[var(--color-accent)]" />
                   <span className="font-[family-name:var(--font-display)] font-bold">
-                    Sede — Curitiba, PR
+                    Sede — Curitiba, PR.
                   </span>
                 </div>
               </div>
