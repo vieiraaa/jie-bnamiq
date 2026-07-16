@@ -16,8 +16,6 @@ import {
   MessageCircle,
   Instagram,
   Linkedin,
-  PanelLeftClose,
-  PanelLeftOpen,
 } from "lucide-react";
 import CommandPalette from "@/components/CommandPalette";
 
@@ -54,7 +52,7 @@ const socialLinks = [
 ];
 
 export default function Sidebar() {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [paletteOpen, setPaletteOpen] = useState(false);
   const pathname = usePathname();

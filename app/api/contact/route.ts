@@ -64,21 +64,19 @@ ${mensagem || ""}
     });
 
     return NextResponse.json({ ok: true });
-  } catch (err: any) {
+   } catch (err: unknown) {
     console.error("========== SMTP ERROR ==========");
-    console.error(err);
-    console.error(err?.message);
-    console.error(err?.response);
-    console.error(err?.responseCode);
+
+    const error = err instanceof Error ? err : new Error(String(err));
+
+    console.error(error);
+    console.error(error.message);
 
     return NextResponse.json(
       {
         ok: false,
-        error: err?.message,
-        response: err?.response,
-        code: err?.responseCode,
+        error: error.message,
       },
       { status: 500 }
     );
   }
-}
