@@ -69,7 +69,7 @@ export default function ProductCard({ product }: { product: Product }) {
       </Link>
 
       <div className="relative aspect-[4/3] bg-[var(--color-surface-2)] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(224,39,44,0.08),transparent_65%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_40%,rgba(170,170,170,0.2),transparent_65%)]" />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <div className="h-40 w-40 md:h-52 md:w-52 rounded-full bg-[radial-gradient(circle,rgba(224,39,44,0.24),transparent_75%)] blur-3xl opacity-70" />
         </div>

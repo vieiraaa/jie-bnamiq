@@ -22,7 +22,7 @@ export default async function ContatoPage({
   const produtoParam = resolvedSearchParams?.produto ?? "";
 
   return (
-    <div className="pt-28 md:pt-36">
+    <div className="pt-28 md:pt-16">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <Reveal>
           <span className="font-[family-name:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
@@ -43,7 +43,7 @@ export default async function ContatoPage({
                 alt="Sede BNAMIQ & A.T.I. BRASIL"
                 className="object-cover w-full h-full"
                 fill
-              />
+              />0,
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin size={16} className="text-[var(--color-accent)]" />

@@ -37,7 +37,7 @@ const timeline = [
 
 export default function SobrePage() {
   return (
-    <div className="pt-28 md:pt-36 pb-24">
+    <div className="pt-28 md:pt-36">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <Reveal>
           <span className="font-[monsserat:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
@@ -72,12 +72,12 @@ export default function SobrePage() {
         </div>
 
         {/* JIE facilities */}
-        <div className="mt-32">
+        <div className="mt-16">
           <Reveal>
             <h2 className="font-[monsserat:var(--font-display)] font-extrabold text-2xl md:text-3xl mb-3">
               Centro de inovação e produção — JIE BNAMIQ
             </h2>
-            <p className="text-[var(--color-muted)] max-w-1xl mb-10">
+            <p className="text-[var(--color-muted)] max-w-1xl mb-16">
               Complexo industrial com centro de montagem, armazém automatizado e estoque
               dedicado, preparado para atender demanda global.
             </p>
@@ -124,12 +124,12 @@ export default function SobrePage() {
         </div>
 
         {/* Global presence */}
-        <div className="mt-32">
+        <div className="mt-10">
           <Reveal>
             <span className="font-[monsserat:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
               Presença mundial
             </span>
-            <h2 className="font-[monsserat:var(--font-display)] font-extrabold text-2xl md:text-3xl mt-4 mb-10">
+            <h2 className="font-[monsserat:var(--font-display)] font-extrabold text-2xl md:text-3xl mt-4 mb-16">
               Quatro continentes, um objetivo.
             </h2>
           </Reveal>
@@ -151,12 +151,12 @@ export default function SobrePage() {
         </div>
 
         {/* ATI Brasil network */}
-        <div className="mt-32">
+        <div className="mt-10">
           <Reveal>
             <span className="font-[monsserat:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
               Distribuição nacional
             </span>
-            <h2 className="font-[monsserat:var(--font-display)] font-extrabold text-2xl md:text-3xl mt-4 mb-10">
+            <h2 className="font-[monsserat:var(--font-display)] font-extrabold text-2xl md:text-3xl mt-4 mb-16">
              JIE BNAMIQ de norte a sul.
             </h2>
           </Reveal>
