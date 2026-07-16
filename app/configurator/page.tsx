@@ -13,7 +13,7 @@ export default function ProdutosPage() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <Reveal>
           <span className="font-[monsserat:var(--font-mono)] text-[11px] tracking-[0.2em] uppercase text-[var(--color-accent)]">
-            Faça o seu projeto com a JIE BNAMIQ
+            Monte o seu projeto com a JIE BNAMIQ
           </span>
           <h1 className="font-[monsserat:var(--font-display)] font-extrabold text-4xl md:text-6xl leading-[1.05] tracking-tight mt-5 max-w-6xl mb-4">
             Página em desenvolvimento.
